@@ -6,6 +6,8 @@ app_publisher = "Asil Gharbia"
 app_description = "frappe 14 app for Lestrada company"
 app_email = "asil.gharbia@gmail.com"
 app_license = "MIT"
+app_logo_url = "/assets/lestrada/img/lestrada_logo.png"
+
 
 # Includes in <head>
 # ------------------
@@ -215,3 +217,53 @@ app_license = "MIT"
 # auth_hooks = [
 #	"lestrada.auth.validate"
 # ]
+
+fixtures = [
+    {"dt": "Translation"},
+    {"dt": "Role",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Procurement Manager",
+                    "Admin",
+                    "Project Manager",
+                    "Operation Manager",
+                    "General Manager",
+                ],
+            ]
+        ],
+    
+    },
+ 
+    # {"dt": "Letter Head",
+    #     "filters": [
+    #         [
+    #             "name",
+    #             "in",
+    #             [""],
+    #         ]
+    #     ],
+    # },
+    
+   
+    # {"dt": "Workflow",
+    #     "filters": [
+    #         [
+    #             "name",
+    #             "in",
+    #             [
+                    
+    #             ],
+    #         ]
+    #     ],
+    # },
+
+   
+
+]
+
+website_context = {
+"favicon": "/assets/lestrada/img/lestrada_logo.png",
+"splash_image": "/assets/lestrada/img/lestrada_full_logo.png",}
