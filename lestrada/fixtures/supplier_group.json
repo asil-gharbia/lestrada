@@ -1,0 +1,66 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Supplier Group",
+  "modified": "2024-11-23 12:39:46.418853",
+  "name": "All Supplier Groups",
+  "note": null,
+  "supplier_group_name": "All Supplier Groups"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Supplier Group",
+  "modified": "2024-11-23 12:39:54.176559",
+  "name": "Services",
+  "note": null,
+  "supplier_group_name": "Services"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Supplier Group",
+  "modified": "2024-11-23 12:39:59.052261",
+  "name": "Local",
+  "note": null,
+  "supplier_group_name": "Local"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Supplier Group",
+  "modified": "2024-11-23 12:40:06.751914",
+  "name": "Raw Material",
+  "note": null,
+  "supplier_group_name": "Raw Material"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Supplier Group",
+  "modified": "2024-11-23 12:40:12.956894",
+  "name": "Electrical",
+  "note": null,
+  "supplier_group_name": "Electrical"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Supplier Group",
+  "modified": "2024-11-23 12:40:18.729576",
+  "name": "Hardware",
+  "note": null,
+  "supplier_group_name": "Hardware"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Supplier Group",
+  "modified": "2024-11-23 12:40:24.083736",
+  "name": "Pharmaceutical",
+  "note": null,
+  "supplier_group_name": "Pharmaceutical"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Supplier Group",
+  "modified": "2024-11-23 12:40:28.567081",
+  "name": "Distributor",
+  "note": null,
+  "supplier_group_name": "Distributor"
+ }
+]

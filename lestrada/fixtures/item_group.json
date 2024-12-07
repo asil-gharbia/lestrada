@@ -1,0 +1,50 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "item_group_name": "All Item Groups",
+  "modified": "2024-11-18 17:15:36.801642",
+  "name": "All Item Groups",
+  "note": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "item_group_name": "Products",
+  "modified": "2024-11-18 17:15:43.368906",
+  "name": "Products",
+  "note": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "item_group_name": "Raw Material",
+  "modified": "2024-11-18 17:15:49.267916",
+  "name": "Raw Material",
+  "note": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "item_group_name": "Services",
+  "modified": "2024-11-18 17:15:53.793580",
+  "name": "Services",
+  "note": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "item_group_name": "Sub Assemblies",
+  "modified": "2024-11-18 17:16:00.178368",
+  "name": "Sub Assemblies",
+  "note": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Item Group",
+  "item_group_name": "Consumable",
+  "modified": "2024-11-18 17:16:04.868931",
+  "name": "Consumable",
+  "note": null
+ }
+]

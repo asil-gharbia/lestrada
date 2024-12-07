@@ -1,0 +1,225 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-25 21:20:08.940855",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_utvxn",
+  "supplier",
+  "supplier_contact",
+  "column_break_pw8r4",
+  "date",
+  "valid_till",
+  "section_break_sziat",
+  "currency",
+  "column_break_plxhf",
+  "exchange_rate",
+  "section_break_ielng",
+  "items",
+  "section_break_t9oo7",
+  "total_quantity",
+  "column_break_bvwwx",
+  "total_amount",
+  "section_break_uivg6",
+  "taxes_and_charges",
+  "column_break_qdru0",
+  "grand_total",
+  "amended_from",
+  "section_break_57jsr",
+  "note",
+  "section_break_qdxhq",
+  "terms",
+  "payment_terms"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "SQ.-.YYYY.-.####"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Supplier Quotation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ielng",
+   "fieldtype": "Section Break",
+   "hide_border": 1,
+   "label": "Supplier Quotation Item"
+  },
+  {
+   "columns": 11,
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Supplier Quotation Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_utvxn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_pw8r4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "valid_till",
+   "fieldtype": "Date",
+   "label": "Valid Till"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_uivg6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "taxes_and_charges",
+   "fieldtype": "Currency",
+   "label": "Taxes and charges"
+  },
+  {
+   "fieldname": "column_break_qdru0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qdxhq",
+   "fieldtype": "Tab Break",
+   "label": "Terms"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Small Text",
+   "label": "Terms"
+  },
+  {
+   "fieldname": "section_break_57jsr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_t9oo7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_bvwwx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fetch_from": "supplier.phone",
+   "fieldname": "supplier_contact",
+   "fieldtype": "Data",
+   "label": "Supplier Contact",
+   "options": "Phone",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_sziat",
+   "fieldtype": "Section Break",
+   "label": "Currency Section"
+  },
+  {
+   "default": "AED",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_plxhf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-07 20:06:38.458760",
+ "modified_by": "Administrator",
+ "module": "Materials",
+ "name": "Supplier Quotation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
