@@ -1,0 +1,238 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-12-07 19:09:34.452677",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_utvxn",
+  "supplier",
+  "project",
+  "column_break_pw8r4",
+  "date",
+  "required_on",
+  "section_break_sziat",
+  "currency",
+  "column_break_plxhf",
+  "exchange_rate",
+  "section_break_ielng",
+  "items",
+  "section_break_t9oo7",
+  "total_quantity",
+  "column_break_bvwwx",
+  "total_amount",
+  "section_break_uivg6",
+  "taxes_and_charges",
+  "column_break_qdru0",
+  "grand_total",
+  "section_break_a08mb",
+  "amended_from",
+  "section_break_57jsr",
+  "note",
+  "section_break_qdxhq",
+  "terms",
+  "payment_terms"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "PO.-.YYYY.-.####"
+  },
+  {
+   "fieldname": "section_break_utvxn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pw8r4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_sziat",
+   "fieldtype": "Section Break",
+   "label": "Currency Section"
+  },
+  {
+   "default": "AED",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_plxhf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate"
+  },
+  {
+   "fieldname": "section_break_ielng",
+   "fieldtype": "Section Break",
+   "hide_border": 1,
+   "label": "Purchase Order Item"
+  },
+  {
+   "columns": 11,
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Purchase Order Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_t9oo7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bvwwx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_uivg6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "taxes_and_charges",
+   "fieldtype": "Currency",
+   "label": "Taxes and charges"
+  },
+  {
+   "fieldname": "column_break_qdru0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Purchase Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_57jsr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "section_break_qdxhq",
+   "fieldtype": "Tab Break",
+   "label": "Terms"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Small Text",
+   "label": "Terms"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Small Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Purchase Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_a08mb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "required_on",
+   "fieldtype": "Date",
+   "label": "Required On ",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-07 20:26:32.015068",
+ "modified_by": "Administrator",
+ "module": "Materials",
+ "name": "Purchase Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

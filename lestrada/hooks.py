@@ -236,17 +236,79 @@ fixtures = [
         ],
     
     },
- 
-    # {"dt": "Letter Head",
+
+    {"dt": "UOM",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Unit",
+                    "Box",
+                    "Nos",
+                    "Pair",
+                    "Set",
+                    "Meter",
+                    "Barleycorn",
+                    "Calibre",
+                    "Cable Length",
+                    "Centimeter",
+                    "Chain",
+                    "Decimeter",
+                    "Foot",
+                    "Hand",
+                ],
+            ]
+        ],
+    },
+
+    {"dt": "Item Group",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "All Item Groups",	
+                    "Products",	
+                    "Raw Material",
+                    "Services",
+                    "Sub Assemblies",
+                    "Consumable",
+                ],
+            ]
+        ],
+    },
+
+    {"dt": "Supplier Group",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "All Supplier Groups",
+                    "Services",
+                    "Local",
+                    "Raw Material",
+                    "Electrical",
+                    "Hardware",
+                    "Pharmaceutical",	
+                    "Distributor",
+                ],
+            ]
+        ],
+    },
+
+    # {"dt": "",
     #     "filters": [
     #         [
     #             "name",
     #             "in",
-    #             [""],
+    #             [
+    #                 
+    #             ],
     #         ]
     #     ],
     # },
-    
    
     # {"dt": "Workflow",
     #     "filters": [

@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item_code",
+ "creation": "2024-11-18 17:31:04.910981",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "item_image",
+  "column_break_bjy44",
+  "item_group",
+  "unit_of_measure",
+  "section_break_fdqm7",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Unit Of Measure",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_fdqm7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_bjy44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_image",
+   "fieldtype": "Attach Image",
+   "label": "Item Image"
+  }
+ ],
+ "image_field": "item_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "max_attachments": 1,
+ "modified": "2024-11-23 12:36:14.943195",
+ "modified_by": "Administrator",
+ "module": "Lestrada",
+ "name": "Item",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "item_group,unit_of_measure",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
