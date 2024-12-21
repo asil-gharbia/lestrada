@@ -27,7 +27,7 @@ frappe.ui.form.on('Purchase Order', {
 	
 });
 
-frappe.ui.form.on('Purchase Order item', {
+frappe.ui.form.on('Purchase Order Item', {
     items_remove:function(frm, cdt, cdn) {
 		sum_quantity(frm);
 		sum_amount(frm);
