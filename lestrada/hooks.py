@@ -298,34 +298,24 @@ fixtures = [
         ],
     },
 
-    # {"dt": "",
-    #     "filters": [
-    #         [
-    #             "name",
-    #             "in",
-    #             [
-    #                 
-    #             ],
-    #         ]
-    #     ],
-    # },
-   
-    # {"dt": "Workflow",
-    #     "filters": [
-    #         [
-    #             "name",
-    #             "in",
-    #             [
-                    
-    #             ],
-    #         ]
-    #     ],
-    # },
+    {"dt":"Workflow State"},
+    {"dt":"Workflow Action Master"},
+    {"dt": "Workflow",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Material Request Workflow"
+                ],
+            ]
+        ],
+    },
 
-   
 
 ]
 
 website_context = {
-"favicon": "/assets/lestrada/img/lestrada_logo.png",
-"splash_image": "/assets/lestrada/img/lestrada_full_logo.png",}
+    "favicon": "/assets/lestrada/img/lestrada_logo.png",
+    "splash_image": "/assets/lestrada/img/lestrada_full_logo.png",
+}

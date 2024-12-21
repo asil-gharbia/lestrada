@@ -1,0 +1,65 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2024-11-15 15:52:51.201218",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2024-12-19 13:26:01.365883",
+  "name": "Rejected",
+  "style": "Warning",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-07 20:50:16.969537",
+  "name": "First Approval",
+  "style": "",
+  "workflow_state_name": "First Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-07 20:50:26.323390",
+  "name": "Second Approval",
+  "style": "",
+  "workflow_state_name": "Second Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-19 13:26:14.261542",
+  "name": "Final Approval",
+  "style": "Success",
+  "workflow_state_name": "Final Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-12-19 13:25:47.749386",
+  "name": "Cancelled",
+  "style": "Danger",
+  "workflow_state_name": "Cancelled"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2024-11-15 15:52:51.199833",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
+ }
+]

@@ -5,8 +5,6 @@ import frappe
 from frappe.model.document import Document
 from frappe import _, throw
 from frappe.utils import today
-from frappe.model.mapper import get_mapped_doc
-
 
 class PurchaseOrder(Document):
 	def validate(self):

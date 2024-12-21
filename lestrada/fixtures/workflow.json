@@ -1,0 +1,173 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Material Request",
+  "is_active": 1,
+  "modified": "2024-12-19 13:23:38.707690",
+  "name": "Material Request Workflow",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "All",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Material Request Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Pending",
+    "update_field": "status",
+    "update_value": "Draft"
+   },
+   {
+    "allow_edit": "Procurement Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Material Request Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "First Approval",
+    "update_field": "status",
+    "update_value": "First Approval"
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Material Request Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Second Approval",
+    "update_field": "status",
+    "update_value": "Second Approval"
+   },
+   {
+    "allow_edit": "All",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Material Request Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Rejected",
+    "update_field": "status",
+    "update_value": "Rejected"
+   },
+   {
+    "allow_edit": "General Manager",
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Material Request Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Final Approval",
+    "update_field": "status",
+    "update_value": "Final Approval"
+   },
+   {
+    "allow_edit": "General Manager",
+    "doc_status": "2",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Material Request Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Cancelled",
+    "update_field": "status",
+    "update_value": "Cancelled"
+   }
+  ],
+  "transitions": [
+   {
+    "action": "First Approval",
+    "allow_self_approval": 1,
+    "allowed": "Procurement Manager",
+    "condition": null,
+    "next_state": "First Approval",
+    "parent": "Material Request Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Pending"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Procurement Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "parent": "Material Request Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Pending"
+   },
+   {
+    "action": "Second Approval",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Second Approval",
+    "parent": "Material Request Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "First Approval"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "parent": "Material Request Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "First Approval"
+   },
+   {
+    "action": "Final Approval",
+    "allow_self_approval": 1,
+    "allowed": "General Manager",
+    "condition": null,
+    "next_state": "Final Approval",
+    "parent": "Material Request Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Second Approval"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "General Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "parent": "Material Request Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Second Approval"
+   },
+   {
+    "action": "Cancel",
+    "allow_self_approval": 1,
+    "allowed": "General Manager",
+    "condition": null,
+    "next_state": "Cancelled",
+    "parent": "Material Request Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Final Approval"
+   }
+  ],
+  "workflow_name": "Material Request Workflow",
+  "workflow_state_field": "workflow_state"
+ }
+]

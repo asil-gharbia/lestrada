@@ -42,14 +42,6 @@
  {
   "docstatus": 0,
   "doctype": "UOM",
-  "modified": "2024-11-18 14:12:40.582879",
-  "name": "Meter",
-  "note": null,
-  "uom_name": "Meter"
- },
- {
-  "docstatus": 0,
-  "doctype": "UOM",
   "modified": "2024-11-18 14:12:49.227554",
   "name": "Barleycorn",
   "note": null,
@@ -110,5 +102,13 @@
   "name": "Hand",
   "note": null,
   "uom_name": "Hand"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-11-18 14:12:40.582879",
+  "name": "Meter",
+  "note": null,
+  "uom_name": "Meter"
  }
 ]
