@@ -29,13 +29,12 @@
   "taxes_and_charges",
   "column_break_qdru0",
   "grand_total",
-  "section_break_a08mb",
-  "amended_from",
   "section_break_57jsr",
   "note",
   "section_break_qdxhq",
   "terms",
-  "payment_terms"
+  "payment_terms",
+  "amended_from"
  ],
  "fields": [
   {
@@ -44,7 +43,8 @@
    "hidden": 1,
    "label": "Series",
    "no_copy": 1,
-   "options": "PO.-.YYYY.-.####"
+   "options": "PO.-.YYYY.-.####",
+   "print_hide": 1
   },
   {
    "fieldname": "section_break_utvxn",
@@ -191,10 +191,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "section_break_a08mb",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "project",
    "fieldtype": "Link",
    "label": "Project",
@@ -210,7 +206,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-12-07 20:26:32.015068",
+ "modified": "2024-12-21 14:38:49.164931",
  "modified_by": "Administrator",
  "module": "Materials",
  "name": "Purchase Order",

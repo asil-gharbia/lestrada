@@ -1,0 +1,23 @@
+[
+ {
+  "align": "Left",
+  "content": "<style>\n\n    .letter-body{\n        display:flex;\n        justify-content: space-between; }\n    \n    .letter-company-logo {\n        float: left;\n        margin-top: -24px; }\n    \n    .letter_logo{\n        height: 100px;\n        width:  80px; }\n    \n    .letterhead{\n        text-align: center;\n        padding: 10px;\n        color: #0181c2;\n        font-weight: 600;\n    }\n    \n    .doc_name{\n        float: right;\n        /*border: 2px solid black !important;*/\n        /*padding: 7px;*/\n        height: 35px;\n        margin-top: 32px; }\n\n</style>\n\n<div class=\"letter-body\">\n    \n    <div class=\"letter-company-logo\">\n        <img alt=\"Lestrada Logo\" class=\"letter_logo\" src=\"/assets/lestrada/img/lestrada_logo.png\"> \n    </div>\n\n    \n    \n    <div class=\"letterhead\">\n        <h2> Lestrada Roda Contracting</h2>\n    </div>\n    \n    <div class=\"doc_name\"> \n        <b> {{ frappe.utils.today() }}</b>\n    </div>\n    \n</div>\n    \n<div class=\"letter-line\">\n            \n</div>",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Letter Head",
+  "footer": null,
+  "footer_align": "Left",
+  "footer_image": null,
+  "footer_image_height": 0.0,
+  "footer_image_width": 0.0,
+  "footer_source": "HTML",
+  "image": null,
+  "image_height": 0.0,
+  "image_width": 0.0,
+  "is_default": 1,
+  "letter_head_name": "Lestrada",
+  "modified": "2024-12-21 15:04:23.686646",
+  "name": "Lestrada",
+  "source": "HTML"
+ }
+]
