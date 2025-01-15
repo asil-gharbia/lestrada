@@ -82,7 +82,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-18 22:45:36.304884",
+ "modified": "2025-01-03 15:10:21.702241",
  "modified_by": "Administrator",
  "module": "Lestrada",
  "name": "Project",
@@ -98,6 +98,42 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Procurement Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "General Manager",
    "share": 1,
    "write": 1
   }

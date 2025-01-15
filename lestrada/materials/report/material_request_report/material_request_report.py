@@ -97,7 +97,6 @@ def get_conditions(filters):
     status = filters.get("status")
     required_on = filters.get("required_on")
     
-    # {0}' ".format(employee)
     if request_date_from and request_date_to:
         condition_query.append("request_date BETWEEN '{0}' AND '{1}'".format(request_date_from,request_date_to))
     
