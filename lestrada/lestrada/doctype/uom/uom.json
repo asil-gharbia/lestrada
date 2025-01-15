@@ -1,6 +1,4 @@
 {
- "_comments": "[]",
- "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:uom_name",
@@ -36,7 +34,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-18 22:46:21.170391",
+ "modified": "2025-01-03 15:07:10.814114",
  "modified_by": "Administrator",
  "module": "Lestrada",
  "name": "UOM",
@@ -52,6 +50,30 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Procurement Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
    "share": 1,
    "write": 1
   }
