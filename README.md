@@ -4,7 +4,7 @@ Welcome to the Lestrada project repository!
 
 ## Overview
 This project was developed using **Frappe 14** during 2024-2025 for the **Lestrada Road Contract company**. It focuses on streamlining and managing the **material request process**, providing an efficient solution tailored to the company's operational needs.
-![Project Screenshot](assets/lestrada/img/lestrada_logo.png)
+![Project Screenshot](/assets/lestrada/img/lestrada_logo.png)
 
 
 ## Key Features
