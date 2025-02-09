@@ -16,6 +16,10 @@ app_logo_url = "/assets/lestrada/img/lestrada_logo.png"
 # app_include_css = "/assets/lestrada/css/lestrada.css"
 # app_include_js = "/assets/lestrada/js/lestrada.js"
 
+app_include_css = [
+    "/assets/lestrada/css/custom_theme.css",
+]
+
 # include js, css files in header of web template
 # web_include_css = "/assets/lestrada/css/lestrada.css"
 # web_include_js = "/assets/lestrada/js/lestrada.js"
